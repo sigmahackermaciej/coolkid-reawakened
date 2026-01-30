@@ -1,7 +1,6 @@
 local player = game.Players.LocalPlayer
 local pg = player:WaitForChild("PlayerGui")
 
--- usuń stare jeśli istnieje
 pcall(function()
     pg.CoolExecutorGUI:Destroy()
 end)
@@ -33,7 +32,7 @@ title.TextColor3 = Color3.fromRGB(255,90,90)
 title.Font = Enum.Font.SourceSansBold
 title.TextSize = 26
 
--- SOUND (jeden globalny)
+-- SOUND
 local sound = Instance.new("Sound")
 sound.SoundId = "rbxassetid://1839246711"
 sound.Volume = 3
@@ -108,7 +107,7 @@ local s4 = makeSection("Skybox",10,240)
 local s5 = makeSection("Sounds",225,240)
 local s6 = makeSection("Extras",440,240)
 
--- BUTTON LISTS (dużo, żeby było „pełne” jak executor GUI)
+-- BUTTON LISTS
 
 local decals = {
 "C00lkidd","Thomas","Team C00l","Team Thomas","K00pkidd",
